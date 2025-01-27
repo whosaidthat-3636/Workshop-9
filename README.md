@@ -66,7 +66,7 @@ function setup() {
 }
 ```
 
-### 3) Increasing the cursor radius
+### 3) Correction
 - let hoverRadius = 80; helps set the range in which where the arcs will be placed
 - hoverRadius in the nested loop updates based on the mouse position
 - mouse X Y is no longer scattered across the sketch
