@@ -79,3 +79,61 @@ let hoverRadius = 80;
     rr = random(10, 30); 
     arcSystem[i] = new Arc(rx, ry, rr);
 ```
+
+
+## Notes
+### 1) Takes and displays video from device
+```
+function setup(){
+pixelDensity(1);
+createCapture(VIDEO);}
+
+// manipulating live video
+let webcam;
+
+function setup(){
+pixelDensity(1);
+webcam = createCapture(VIDEO);
+webcam.size(aspect ratio);
+// to not show on browser
+webcam.hide();}
+```
+
+### 2) Color taken based on live image
+```
+function draw(){
+image(webcam)}
+
+let pixelColour = webcam.get(this.x, this.y);
+fill(pixelColour[0], pixelColour[1], pixelColour[2], alpha);
+
+// using class functions from workshop 7
+// in this instance its referred to as RGB in a sense
+// disable bg and image(webcam) to just draw on the screen
+```
+
+### 3) Video enhancements
+```
+- Issue could be size of the video
+//rescale
+let scale = value;
+//using variable so easier to change
+webcam.size(width/scale, height/scale);
+//pixelColour to change
+show(){
+let pX = this.x/scale;
+let pY = this.y/scale}
+letpixelColour = webcam.get(pX, pY);
+//these variables allow us to extract data from
+function draw(){
+webcam.loadPixels()}
+```
+
+### 4) Different effects
+```
+//increase the number of balls 
+// increase the sizes of balls
+function setup(){
+for ( x = 0; x < value, x++){
+rr = random(smallest value, biggest)}
+```
